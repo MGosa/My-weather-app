@@ -1,34 +1,92 @@
+body {
+  background-color: #e9e2d0;
+}
 h1 {
-  padding-top: 30px;
+  padding-top: 20px;
   margin-left: 10px;
   font-size: 50px;
-  color: purple;
+  color: #6e5773;
 }
-
-h2 {
-  text-align: center;
-
-  padding: 40px 0 10px;
+.city-input {
+  width: 300px;
+  padding: 10px 10px;
+  border: none;
+  background-color: #e9e2d0;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-top: 30px;
 }
-p {
-  text-align: center;
-
+.search-button {
+  padding: 10px 30px;
+  background-color: #6e5773;
+  border: none;
+  border-radius: 6px;
+  margin-left: 5px;
+  margin-top: 30px;
+}
+.city-and-search {
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  border-bottom: 1px solid #e9e2d0;
+  padding: 10px 0px 30px 0px;
+}
+.weather-container {
+  display: flex;
+  margin-left: 50px;
+  padding-left: 20px;
+}
+.weather-icon {
+  font-size: 44px;
+  margin-top: 30px;
+}
+.weather-temrature {
+  font-size: 98px;
+  font-weight: bold;
+  color: #393e46;
+  margin-left: 10px;
+}
+.weather-temperature-unit {
   font-size: 30px;
-  padding-bottom: 40px;
-  color: #113f67;
+  color: #393e46;
+  margin-top: 35px;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-details {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  color: rgba(39, 33, 66, 0.4);
+  margin: 50px 50px 0px 0px;
+  padding-right: 20px;
+}
+.weather-details .humidity-input {
+  color: #d45d79;
+  font-weight: bold;
+}
+.weather-details .wind-input {
+  color: #d45d79;
+  font-weight: bold;
 }
 .container {
-  max-width: 900px;
+  max-width: 700px;
   font-family: "Concert One", sans-serif;
   font-family: "Prompt", sans-serif;
-  border: solid gray;
+  margin: 40px auto;
+  display: block;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 30px 50px rgba(86, 50, 72, 0.08);
+  padding: 10px 20px;
 }
-.row {
-  font-size: 24px;
-  color: #113f67;
-}
-.row .tempperture {
+footer {
   font-size: 13px;
-  color: black;
-  margin-bottom: 10px;
+  text-align: center;
+  color: #393e46;
+  border-top: 1px solid #e9e2d0;
+  padding: 30px 0px 0px 0px;
 }
