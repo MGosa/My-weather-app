@@ -38,11 +38,13 @@ header {
   padding-left: 20px;
 }
 .weather-icon {
-  font-size: 44px;
-  margin-top: 30px;
+  width: 98px;
+  height: 98px;
+  margin-top: 20px;
 }
 .weather-temperature {
   font-size: 98px;
+
   font-weight: bold;
   color: #393e46;
   margin-left: 10px;
@@ -73,7 +75,7 @@ header {
   font-weight: bold;
 }
 .container {
-  max-width: 700px;
+  max-width: 800px;
   font-family: "Concert One", sans-serif;
   font-family: "Prompt", sans-serif;
   margin: 40px auto;
