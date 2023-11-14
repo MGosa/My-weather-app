@@ -74,6 +74,21 @@ header {
   color: #d45d79;
   font-weight: bold;
 }
+.weather-forecast {
+  margin: 15px 0px 20px 0px;
+  text-align: center;
+}
+.forecast-date {
+  font-size: 16px;
+  color: #393e46;
+  opacity: 0.6;
+}
+.forecast-temperature {
+  font-size: 13px;
+}
+.forecast-temperature-min {
+  opacity: 0.6;
+}
 .container {
   max-width: 800px;
   font-family: "Concert One", sans-serif;
