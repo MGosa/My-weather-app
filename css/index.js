@@ -18,6 +18,7 @@ function refreshWeather(response) {
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${humidity}%`;
   windElement.innerHTML = `${wind}km/h`;
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -52,7 +53,14 @@ function handleSearchSubmit(event) {
 
   searchCity(searchInput.value);
 }
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "off12bea02cd1ft1f4f0c632ee3ca6b4";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
   let forecastEmenemt = document.querySelector("#forecast");
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
@@ -73,4 +81,3 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Glasgow");
-displayForecast();
