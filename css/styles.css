@@ -67,14 +67,16 @@ header {
   padding-right: 20px;
 }
 .weather-details .humidity-input {
-  color: #d45d79;
+  color: #6e5773;
   font-weight: bold;
 }
 .weather-details .wind-input {
-  color: #d45d79;
+  color: #6e5773;
   font-weight: bold;
 }
 .weather-forecast {
+  display: flex;
+  justify-content: space-around;
   margin: 15px 0px 20px 0px;
   text-align: center;
 }
@@ -85,10 +87,10 @@ header {
 }
 .forecast-temperature {
   font-size: 13px;
-}
-.forecast-temperature-min {
+  color: #6e5773;
   opacity: 0.6;
 }
+
 .container {
   max-width: 800px;
   font-family: "Concert One", sans-serif;
