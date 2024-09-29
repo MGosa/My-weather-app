@@ -26,7 +26,7 @@ h1 {
 }
 .city-and-search {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 header {
   border-bottom: 1px solid #e9e2d0;
